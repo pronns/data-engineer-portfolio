@@ -1,59 +1,78 @@
 # Pronnoy Dutta — Portfolio Website
 
-A professional, interactive portfolio website for a **Senior Data Engineer** with 5.5+ years of experience.
+A **"Data Engineer OS"** themed interactive portfolio for a Lead Data Engineer with 5.5+ years of experience. Built with Next.js 14 (App Router) and deployed on Vercel.
+
+**Live site:** [pronns.vercel.app](https://pronns.vercel.app) &nbsp;|&nbsp; **GitHub:** [github.com/pronns](https://github.com/pronns)
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology | Why |
-|---|---|---|
-| Structure | **HTML5** | Semantic, no framework overhead |
-| Styling | **CSS3** (custom properties, grid, flexbox) | Full control, no dependency |
-| 3D Engine | **Three.js r128** (CDN) | Particle network background |
-| Animations | **Vanilla JS** | Typed effect, counters, scroll reveal, 3D tilt |
-| Icons | **Font Awesome 6** (CDN) | Comprehensive icon set |
-| Fonts | **Google Fonts** — Inter + Fira Code | Professional + code aesthetic |
-
-> **Zero build step.** Open `index.html` in any browser — it just works.
-
----
-
-## Features & Effects
-
-### Visual Effects
-- **Three.js 3D Particle Network** — animated data-graph in the hero background with mouse parallax
-- **3D Card Tilt** — perspective tilt on project & skill cards following mouse position
-- **Cursor Glow** — large radial gradient follows the cursor across the page
-- **Rotating Avatar Rings** — three concentric animated rings around the initials avatar
-- **Floating Badges** — animated floating info badges beside the avatar
-
-### Animation
-- **Typed.js Effect** — hand-coded cycling text: "Senior Data Engineer → Pipeline Architect → ..."
-- **Scroll Reveal** — elements fade+slide in from bottom/left/right as they enter the viewport
-- **Timeline Reveal** — experience items slide in from left on scroll
-- **Counter Animation** — hero stats (5.5+, 50+, 30+) count up on load
-- **Gradient Top Bar** — skill cards reveal a gradient accent bar on hover
-
-### UX
-- **Sticky Glassmorphism Nav** — blurred, border-bottom nav with active scroll state
-- **Active Link Underline** — animated underline on nav hover
-- **Custom Scrollbar** — thin cyan scrollbar matching the theme
-- **Smooth Scroll** — CSS smooth scrolling between sections
-- **Contact Form** — client-side with animated success state
-- **Fully Responsive** — mobile-first grid collapses gracefully
+| Layer | Technology |
+|---|---|
+| Framework | **Next.js 14** (App Router, TypeScript) |
+| Styling | **CSS3** (custom properties, grid, flexbox) |
+| 3D Engine | **Three.js** — data pipeline network background |
+| Animations | **GSAP + ScrollTrigger** — scroll reveals, 3D tilt, XP bars |
+| Smooth Scroll | **Lenis** |
+| Audio | **Web Audio API** — hover/click/boot sound effects |
+| Icons | **Font Awesome 6.5** (CDN) |
+| Fonts | **Google Fonts** — JetBrains Mono, Space Grotesk, Inter |
+| Deployment | **Vercel** |
 
 ---
 
-## Color Theme
+## Theme — "Data Engineer OS"
+
+Every UI element is reimagined through a data engineering / terminal lens:
+
+| UI Element | Theme Metaphor |
+|---|---|
+| Navigation | VS Code-style editor tabs (about.py, git_log.sh, skills.yml…) |
+| Hero | Terminal window with typed CLI commands |
+| Experience | Git commit log with branch labels & commit dots |
+| Skills | XP progress bars with level badges (Expert / Advanced / Intermediate) |
+| Certifications | Achievement badges ("Achievement Unlocked") |
+| Section headers | File path style (`src/about.py`, `logs/git_log.sh`) |
+| Preloader | Terminal boot sequence (`system_boot.sh`) |
+
+---
+
+## Color Palette
 
 ```css
---bg:      #0a0a1a   /* Deep navy background */
---primary: #00d4ff   /* Cyan — primary accent */
---accent:  #7b2fff   /* Purple — secondary accent */
---text:    #e2e8f0   /* Soft white text */
---muted:   #64748b   /* Muted grey for secondary text */
+--bg:      #0a0e17   /* Deep dark background */
+--green:   #00ff88   /* Matrix green — primary accent */
+--blue:    #00aaff   /* Electric blue — secondary */
+--amber:   #ffaa00   /* Amber — warnings / highlights */
+--red:     #ff3355   /* Red — status indicators */
+--purple:  #aa55ff   /* Purple — misc accents */
 ```
+
+---
+
+## Features
+
+### Visual
+- **Three.js WebGL background** — 60 animated nodes with connections, 80 flowing data packets, 30 amber accent particles, mouse parallax
+- **Grid overlay** — subtle green grid across the entire background
+- **Custom cursor** — dot + ring, switches to amber square on hover (desktop only)
+- **3D card tilt** — perspective tilt on panels, skill cards, achievement badges
+- **Vignette** — radial edge darkening overlay
+
+### Animation
+- **Terminal boot preloader** — typed system boot lines, enter button reveals on completion
+- **Typed CLI text** — cycling terminal commands in hero (spark-submit, SQL, aws cli, airflow, kubectl)
+- **GSAP scroll reveals** — all sections fade + slide in on scroll
+- **XP bar fill** — skill progress bars animate when scrolled into view
+- **Counter animation** — hero stat numbers count up on load
+- **Section line expand** — decorative lines animate from left on scroll
+
+### UX
+- **Web Audio API sounds** — subtle synth sounds on hover and click
+- **Lenis smooth scrolling** — buttery smooth page scroll
+- **Mobile responsive** — hamburger menu, single-column layout on small screens
+- **`prefers-reduced-motion`** support — all animations disabled for accessibility
 
 ---
 
@@ -61,66 +80,38 @@ A professional, interactive portfolio website for a **Senior Data Engineer** wit
 
 | Section | Description |
 |---|---|
-| **Hero** | Full-screen with Three.js background, name, typing subtitle, CTA buttons, animated stats |
-| **About** | Bio, specialisations, floating avatar with badges |
-| **Skills** | 6 tech-stack cards (Languages, Big Data, Cloud, Databases, Orchestration, DevOps) |
-| **Experience** | Animated vertical timeline — 3 roles across 5.5 years |
-| **Projects** | 4 featured project cards with 3D tilt, impact metrics, and tech stacks |
-| **Contact** | Split layout — contact links + message form |
+| **Hero** | Terminal window, name, typed commands, 4 stat widgets, CTA buttons |
+| **About** | Bio panel + 4 highlight cards (Pipeline Architect, Perf Engineer, Cloud Native, Team Lead) |
+| **Experience** | Git log timeline — Axtria (Project Lead) + Infosys (Systems Engineer) |
+| **Skills** | 4 XP panels — Languages, Big Data, Cloud (AWS), Architecture & DevOps |
+| **Projects** | 4 dashboard cards with status badges and impact metrics |
+| **Education** | Degree + school + AWS Community Builder membership |
+| **Achievements** | AWS Security Specialty, AWS Solutions Architect Associate, CCNA |
+| **Contact** | Email, location, social links + contact form |
 
 ---
 
 ## Getting Started
 
 ```bash
-# Clone or download this repo
-git clone https://github.com/pronnoydutta/portfolio.git
-cd portfolio
-
-# Open directly in browser (no server needed)
-open index.html           # macOS
-start index.html          # Windows
-xdg-open index.html       # Linux
-
-# Or serve with any static server
-npx serve .
-python -m http.server 8000
+git clone https://github.com/pronns/<repo-name>.git
+cd <repo-name>
+npm install
+npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## Customising
+## Deployment (Vercel)
 
-All content is in a single `index.html` file. Find and replace:
+1. Push to GitHub
+2. Go to [vercel.com](https://vercel.com) → Import the repo
+3. Framework preset: **Next.js** (auto-detected)
+4. Click **Deploy** — done
 
-### Personal Info
-| Placeholder | Replace With |
-|---|---|
-| `Pronnoy Dutta` | Your full name |
-| `pronnoy.dutta@example.com` | Your email |
-| `linkedin.com/in/pronnoy-dutta` | Your LinkedIn URL |
-| `github.com/pronnoydutta` | Your GitHub URL |
-
-### Stats (Hero)
-Find `data-target` attributes in the `.hero-stats` section:
-```html
-<span class="h-stat-num" data-target="5.5" data-decimal="true">0</span>
-```
-
-### Experience
-Update the `.tl-item` blocks in the `#experience` section with your actual companies, roles, dates, and descriptions.
-
-### Projects
-Update the `.proj-card` blocks in the `#projects` section with your real projects and impact metrics.
-
-### Theme Colors
-Edit the `:root` CSS variables at the top of the `<style>` block:
-```css
-:root {
-  --primary: #00d4ff;  /* Change to any color */
-  --accent:  #7b2fff;
-}
-```
+Every `git push` triggers an automatic redeploy.
 
 ---
 
@@ -128,42 +119,23 @@ Edit the `:root` CSS variables at the top of the `<style>` block:
 
 | Browser | Support |
 |---|---|
-| Chrome 90+ | ✅ Full |
-| Firefox 88+ | ✅ Full |
-| Safari 14+ | ✅ Full |
-| Edge 90+ | ✅ Full |
-| Mobile (iOS/Android) | ✅ Responsive |
+| Chrome 90+ | Full |
+| Firefox 88+ | Full |
+| Safari 14+ | Full |
+| Edge 90+ | Full |
+| Mobile (iOS/Android) | Responsive (custom cursor hidden) |
 
-> Three.js requires WebGL. All modern browsers support it.
+> Three.js requires WebGL — supported by all modern browsers.
 
 ---
 
 ## Performance Notes
 
-- Three.js lines are rebuilt every 3rd frame (not every frame) to keep CPU usage low
-- `Math.min(devicePixelRatio, 2)` caps the renderer pixel ratio
-- Scroll observer uses `IntersectionObserver` — no scroll event listeners
-- All CDN resources are loaded from fast global CDNs (Cloudflare, Google)
+- Three.js connections rebuilt every 60 frames, not every frame
+- `Math.min(devicePixelRatio, 2)` caps renderer pixel ratio
+- Dynamic `import()` for Three.js, GSAP, and Lenis — avoids SSR issues
+- All fonts loaded via Google Fonts with `preconnect` hints
 
 ---
 
-## Deployment
-
-Deploy as a static site to any of these — **free tier available**:
-
-| Platform | Command / Steps |
-|---|---|
-| **GitHub Pages** | Push to `gh-pages` branch or enable in repo Settings |
-| **Netlify** | Drag & drop the `portfolio/` folder to netlify.com |
-| **Vercel** | `npx vercel` in the folder |
-| **Cloudflare Pages** | Connect GitHub repo |
-
----
-
-## License
-
-MIT — feel free to use, modify, and share.
-
----
-
-*Built with ❤️ and a lot of data pipelines.*
+*Built with a lot of data pipelines and too much caffeine.*
