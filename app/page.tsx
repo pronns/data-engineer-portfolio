@@ -702,7 +702,7 @@ export default function Home() {
                     <i className="fas fa-terminal"></i> View Experience
                   </a>
                   <a
-                    href="/Pronnoy_Dutta_Resume.pdf"
+                    href="/Pronnoy Dutta Resume.pdf"
                     target="_blank"
                     className="btn-outline interactive"
                   >
