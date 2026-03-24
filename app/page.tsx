@@ -723,7 +723,7 @@ export default function Home() {
                     <div className="stat-label">% Perf Gain</div>
                   </div>
                   <div className="stat-widget interactive">
-                    <div className="stat-val" data-target="3">
+                    <div className="stat-val" data-target="4">
                       0
                     </div>
                     <div className="stat-label">Certifications</div>
@@ -831,13 +831,13 @@ export default function Home() {
             </div>
 
             <div className="git-log">
-              {/* Axtria */}
+              {/* Axtria — Project Lead */}
               <div className="commit gs-reveal">
                 <div className="commit-dot"></div>
                 <div className="commit-hash">
                   <span className="branch">main</span>
                   <span className="date">
-                    Mar 2022 &mdash; Present &bull; Axtria, Gurgaon
+                    Apr 2025 &mdash; Present &bull; Axtria, Gurugram
                   </span>
                 </div>
                 <div className="panel">
@@ -847,63 +847,122 @@ export default function Home() {
                       <div className="dot y"></div>
                       <div className="dot g"></div>
                     </div>
-                    <span className="filename">axtria_pipeline.py</span>
+                    <span className="filename">axtria_lead.py</span>
                   </div>
                   <div className="panel-body">
-                    <h3>Project Lead</h3>
+                    <h3>Project Lead — Data Engineering</h3>
                     <div className="role-progression">
-                      Analyst <span className="arrow">→</span> Associate{" "}
-                      <span className="arrow">→</span> Sr. Associate{" "}
+                      Associate <span className="arrow">→</span> Sr. Associate{" "}
                       <span className="arrow">→</span>{" "}
                       <span className="current">Project Lead</span>
                     </div>
                     <ul className="commit-bullets">
                       <li>
-                        Led a team of data engineers owning design, delivery,
-                        and production stability of{" "}
-                        <strong>batch data pipelines</strong> supporting
-                        business-critical analytics.
+                        Own end-to-end architecture and delivery of{" "}
+                        <strong>batch data pipelines on AWS</strong> (S3,
+                        Glue, EMR, Redshift) supporting analytics for a
+                        50M-patient commercial pharma platform, maintaining{" "}
+                        <strong>99.9% SLA compliance</strong> across all
+                        production runs.
                       </li>
                       <li>
-                        Designed{" "}
-                        <strong>
-                          cloud-native data pipeline architectures
-                        </strong>{" "}
-                        on AWS — defining ingestion, transformation, and
-                        storage patterns for scalable platforms.
+                        Lead a team of <strong>4 data engineers</strong> —
+                        managing sprint planning, technical design reviews,
+                        code quality standards, and career development for
+                        junior members.
                       </li>
                       <li>
-                        Modernized legacy Hive/SQL pipelines by migrating to{" "}
-                        <strong>PySpark</strong>-based distributed processing,
-                        improving end-to-end performance by{" "}
-                        <strong>30%</strong>.
+                        Serve as primary escalation owner for production data
+                        incidents; resolved <strong>20+ P1/P2 events</strong>{" "}
+                        and implemented proactive monitoring guardrails that
+                        cut repeat incidents by <strong>60%</strong>.
                       </li>
                       <li>
-                        Primary <strong>escalation point</strong> for
-                        production data issues — drove root cause analysis,
-                        coordinated fixes, and implemented long-term stability
-                        improvements.
+                        Translated evolving business requirements from pharma
+                        analytics stakeholders into scalable data solutions,
+                        consistently delivering within committed timelines.
                       </li>
                       <li>
-                        Diagnosed Spark performance bottlenecks and applied
-                        targeted optimizations for pipelines processing{" "}
-                        <strong>200M records/day</strong>.
+                        Drove adoption of <strong>CI/CD practices</strong>{" "}
+                        and Git-based branching strategy across the team,
+                        reducing deployment errors and improving release
+                        confidence.
+                      </li>
+                    </ul>
+                    <div className="commit-metrics">
+                      <div className="cm-item">
+                        <span className="cm-val">99.9%</span>
+                        <span className="cm-label">SLA Compliance</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">4</span>
+                        <span className="cm-label">Engineers Led</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">20+</span>
+                        <span className="cm-label">P1/P2 Resolved</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">60%</span>
+                        <span className="cm-label">Fewer Incidents</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Axtria — Senior Data Engineer */}
+              <div className="commit gs-reveal">
+                <div className="commit-dot"></div>
+                <div className="commit-hash">
+                  <span className="branch">main</span>
+                  <span className="date">
+                    May 2024 &mdash; Apr 2025 &bull; Axtria, Gurugram
+                  </span>
+                </div>
+                <div className="panel">
+                  <div className="panel-bar">
+                    <div className="dots">
+                      <div className="dot r"></div>
+                      <div className="dot y"></div>
+                      <div className="dot g"></div>
+                    </div>
+                    <span className="filename">axtria_senior.py</span>
+                  </div>
+                  <div className="panel-body">
+                    <h3>Senior Data Engineer</h3>
+                    <ul className="commit-bullets">
+                      <li>
+                        Migrated 15+ legacy Hive and SQL pipelines to{" "}
+                        <strong>PySpark-based distributed processing</strong>{" "}
+                        on AWS EMR, achieving a{" "}
+                        <strong>30% reduction</strong> in end-to-end pipeline
+                        runtime — cutting daily processing wall-time from ~9
+                        hrs to ~6 hrs.
                       </li>
                       <li>
-                        Designed <strong>dimensional data models</strong> with{" "}
-                        <strong>SCD Type-2</strong> logic for historical
-                        analysis, auditability, and consistent reporting.
+                        Diagnosed and resolved Spark performance bottlenecks
+                        (data skew, suboptimal partitioning, oversized
+                        shuffles) on pipelines ingesting{" "}
+                        <strong>200M records/day</strong>, reducing estimated
+                        compute costs by ~₹33L/yr in EMR cluster spend.
                       </li>
                       <li>
-                        Automated Tableau refresh orchestration via{" "}
-                        <strong>Airflow</strong>, saving{" "}
-                        <strong>7 hours/cycle</strong> across{" "}
-                        <strong>30+ dashboards</strong>.
+                        Designed <strong>SCD Type-2 dimensional data models</strong>{" "}
+                        supporting 3+ years of full historical auditability
+                        for patient-level pharma data, enabling downstream
+                        teams to retire ad-hoc reconciliation scripts entirely.
                       </li>
                       <li>
-                        Partnered with stakeholders to translate requirements
-                        into <strong>scalable data solutions</strong> while
-                        balancing timelines and maintainability.
+                        Managed ingestion of JSON, CSV, Parquet, and ORC
+                        formats across multiple upstream source systems,
+                        implementing schema-on-read patterns with{" "}
+                        <strong>AWS Glue Data Catalog</strong>.
+                      </li>
+                      <li>
+                        Mentored 2 junior engineers on PySpark optimization
+                        patterns and AWS data services — both promoted within
+                        the project cycle.
                       </li>
                     </ul>
                     <div className="commit-metrics">
@@ -916,12 +975,87 @@ export default function Home() {
                         <span className="cm-label">Records/Day</span>
                       </div>
                       <div className="cm-item">
-                        <span className="cm-val">7hr</span>
-                        <span className="cm-label">Saved/Cycle</span>
+                        <span className="cm-val">9→6hr</span>
+                        <span className="cm-label">Runtime Cut</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">15+</span>
+                        <span className="cm-label">Pipelines Migrated</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Axtria — Associate Data Engineer */}
+              <div className="commit gs-reveal">
+                <div className="commit-dot"></div>
+                <div className="commit-hash">
+                  <span className="branch">main</span>
+                  <span className="date">
+                    Mar 2022 &mdash; Apr 2024 &bull; Axtria, Gurugram
+                  </span>
+                </div>
+                <div className="panel">
+                  <div className="panel-bar">
+                    <div className="dots">
+                      <div className="dot r"></div>
+                      <div className="dot y"></div>
+                      <div className="dot g"></div>
+                    </div>
+                    <span className="filename">axtria_associate.py</span>
+                  </div>
+                  <div className="panel-body">
+                    <h3>Associate Data Engineer</h3>
+                    <ul className="commit-bullets">
+                      <li>
+                        Built Python-based Tableau refresh orchestration
+                        framework automating end-of-cycle dashboard updates
+                        across <strong>30+ dashboards</strong>, eliminating
+                        7 hours of manual effort per cycle (~
+                        <strong>350 hrs/yr saved</strong>).
+                      </li>
+                      <li>
+                        Developed and maintained production ETL pipelines
+                        using <strong>PySpark, AWS Glue, and Control-M</strong>{" "}
+                        with zero-defect delivery across 12 consecutive
+                        releases.
+                      </li>
+                      <li>
+                        Implemented data quality validation checks (null
+                        checks, referential integrity, row count
+                        reconciliation) at each pipeline stage, reducing data
+                        defects reaching downstream consumers by{" "}
+                        <strong>80%</strong>.
+                      </li>
+                      <li>
+                        Built star-schema fact and dimension tables in{" "}
+                        <strong>Amazon Redshift</strong> supporting 5
+                        analytics use cases including territory performance,
+                        brand uptake, and rep activity tracking.
+                      </li>
+                      <li>
+                        Collaborated with business analysts and data scientists
+                        to define data contracts, schema agreements, and SLA
+                        expectations for <strong>8+ data products</strong>.
+                      </li>
+                    </ul>
+                    <div className="commit-metrics">
+                      <div className="cm-item">
+                        <span className="cm-val">350hr</span>
+                        <span className="cm-label">Saved/Year</span>
                       </div>
                       <div className="cm-item">
                         <span className="cm-val">30+</span>
                         <span className="cm-label">Dashboards</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">80%</span>
+                        <span className="cm-label">Fewer Defects</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">8+</span>
+                        <span className="cm-label">Data Products</span>
                       </div>
                     </div>
                   </div>
@@ -950,22 +1084,53 @@ export default function Home() {
                     <h3>Systems Engineer</h3>
                     <ul className="commit-bullets">
                       <li>
-                        Designed cloud-based data pipelines using{" "}
-                        <strong>AWS S3, Python, and PySpark</strong> for
-                        monthly sales analytics.
+                        Designed and implemented cloud-based monthly sales
+                        analytics pipelines using{" "}
+                        <strong>AWS S3, Python, and PySpark</strong> for a
+                        retail client operating 500+ stores across 3 regions
+                        — automating report generation that previously
+                        required 3 days of manual effort per cycle.
                       </li>
                       <li>
-                        Built a{" "}
-                        <strong>star-schema data warehouse</strong> with fact
-                        and dimension tables tracking sales, customer
-                        behavior, and metrics.
+                        Architected a{" "}
+                        <strong>star-schema data warehouse</strong> with 8
+                        fact and dimension tables tracking revenue, billing
+                        frequency, basket size, and customer engagement KPIs
+                        — became the single source of truth for executive
+                        dashboards.
                       </li>
                       <li>
-                        Developed{" "}
-                        <strong>KPI computation logic</strong> for revenue,
-                        billing frequency, and customer engagement.
+                        Developed <strong>KPI computation logic</strong> for
+                        12+ business metrics (revenue growth, churn rate,
+                        store-level performance), reducing analyst ad-hoc
+                        query turnaround from days to under 2 hours.
+                      </li>
+                      <li>
+                        Optimised complex SQL queries on{" "}
+                        <strong>100M+ row transaction tables</strong>,
+                        reducing report generation time by{" "}
+                        <strong>40%</strong> through indexing and query
+                        restructuring.
                       </li>
                     </ul>
+                    <div className="commit-metrics">
+                      <div className="cm-item">
+                        <span className="cm-val">40%</span>
+                        <span className="cm-label">Faster Reports</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">100M+</span>
+                        <span className="cm-label">Rows Optimised</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">12+</span>
+                        <span className="cm-label">KPIs Built</span>
+                      </div>
+                      <div className="cm-item">
+                        <span className="cm-val">3 days</span>
+                        <span className="cm-label">Manual Work Cut</span>
+                      </div>
+                    </div>
                     <div className="tags" style={{ marginTop: "1.2rem" }}>
                       <span className="tag blue">AWS S3</span>
                       <span className="tag blue">PySpark</span>
@@ -1298,15 +1463,18 @@ export default function Home() {
                     <div className="dot y"></div>
                     <div className="dot g"></div>
                   </div>
-                  <span className="filename">enterprise_pipeline.py</span>
+                  <span className="filename">pharma_platform.py</span>
                 </div>
                 <div className="panel-body">
                   <div className="proj-status live">Production</div>
-                  <h3>Enterprise Data Pipeline Platform</h3>
+                  <h3>Pharma Commercial Data Platform</h3>
                   <p className="proj-desc">
-                    Cloud-native batch processing platform on AWS handling
-                    200M+ records daily. Designed ingestion, transformation,
-                    and storage architecture for business-critical analytics.
+                    Cloud-native batch data platform on AWS processing 200M
+                    records/day of pharma commercial data — prescriptions,
+                    sales force activity, and HCP engagement. Migrated 15+
+                    legacy Hive pipelines to PySpark, achieving 30%
+                    performance improvement and reducing daily processing
+                    window from 9 hrs to 6 hrs.
                   </p>
                   <div className="proj-metrics">
                     <div className="proj-metric">
@@ -1317,12 +1485,23 @@ export default function Home() {
                       <span>30%</span>
                       <span>Faster</span>
                     </div>
+                    <div className="proj-metric">
+                      <span>99.9%</span>
+                      <span>SLA</span>
+                    </div>
+                    <div className="proj-metric">
+                      <span>350hr</span>
+                      <span>Saved/Yr</span>
+                    </div>
                   </div>
                   <div className="tags">
-                    <span className="tag">AWS</span>
+                    <span className="tag">Python</span>
                     <span className="tag">PySpark</span>
+                    <span className="tag">AWS EMR</span>
+                    <span className="tag">AWS Glue</span>
+                    <span className="tag">Redshift</span>
                     <span className="tag">Airflow</span>
-                    <span className="tag">S3</span>
+                    <span className="tag">Control-M</span>
                   </div>
                 </div>
               </div>
@@ -1334,31 +1513,40 @@ export default function Home() {
                     <div className="dot y"></div>
                     <div className="dot g"></div>
                   </div>
-                  <span className="filename">scd2_warehouse.sql</span>
+                  <span className="filename">retail_warehouse.sql</span>
                 </div>
                 <div className="panel-body">
-                  <div className="proj-status live">Production</div>
-                  <h3>SCD Type-2 Data Warehouse</h3>
+                  <div className="proj-status shipped">Shipped</div>
+                  <h3>Retail Sales Analytics Data Warehouse</h3>
                   <p className="proj-desc">
-                    Dimensional data model with SCD Type-2 change tracking
-                    enabling historical analysis, auditability, and consistent
-                    downstream reporting.
+                    End-to-end sales analytics pipeline and data warehouse for
+                    a retail client with 500+ stores across 3 regions.
+                    Automated monthly reporting that previously took 3 days of
+                    manual effort. Built an 8-table star-schema warehouse
+                    powering executive-level revenue and engagement dashboards,
+                    with KPI logic covering 12+ business metrics.
                   </p>
                   <div className="proj-metrics">
                     <div className="proj-metric">
-                      <span>100%</span>
-                      <span>Audit Trail</span>
+                      <span>40%</span>
+                      <span>Faster Reports</span>
                     </div>
                     <div className="proj-metric">
-                      <span>SCD-2</span>
-                      <span>History</span>
+                      <span>12+</span>
+                      <span>KPIs</span>
+                    </div>
+                    <div className="proj-metric">
+                      <span>100M+</span>
+                      <span>Rows</span>
                     </div>
                   </div>
                   <div className="tags">
-                    <span className="tag blue">Data Modeling</span>
+                    <span className="tag blue">Python</span>
+                    <span className="tag blue">PySpark</span>
+                    <span className="tag blue">AWS S3</span>
                     <span className="tag blue">SQL</span>
-                    <span className="tag blue">Redshift</span>
                     <span className="tag blue">Star Schema</span>
+                    <span className="tag blue">Amazon Redshift</span>
                   </div>
                 </div>
               </div>
@@ -1376,14 +1564,15 @@ export default function Home() {
                   <div className="proj-status shipped">Shipped</div>
                   <h3>Tableau Refresh Automation</h3>
                   <p className="proj-desc">
-                    Python-based orchestration automating Tableau dashboard
-                    refreshes via Airflow &mdash; eliminated manual workflows
-                    across 30+ dashboards.
+                    Python-based orchestration framework automating
+                    end-of-cycle Tableau dashboard updates via Airflow across
+                    30+ dashboards — eliminated 7 hours of manual effort per
+                    cycle (~350 hrs/yr saved).
                   </p>
                   <div className="proj-metrics">
                     <div className="proj-metric">
-                      <span>7hr</span>
-                      <span>Saved/Cycle</span>
+                      <span>350hr</span>
+                      <span>Saved/Yr</span>
                     </div>
                     <div className="proj-metric">
                       <span>30+</span>
@@ -1394,6 +1583,7 @@ export default function Home() {
                     <span className="tag blue">Python</span>
                     <span className="tag blue">Airflow</span>
                     <span className="tag blue">Tableau</span>
+                    <span className="tag blue">AWS</span>
                   </div>
                 </div>
               </div>
@@ -1405,30 +1595,33 @@ export default function Home() {
                     <div className="dot y"></div>
                     <div className="dot g"></div>
                   </div>
-                  <span className="filename">sales_analytics.py</span>
+                  <span className="filename">scd2_model.sql</span>
                 </div>
                 <div className="panel-body">
-                  <div className="proj-status shipped">Shipped</div>
-                  <h3>Sales Analytics Pipeline</h3>
+                  <div className="proj-status live">Production</div>
+                  <h3>SCD Type-2 Dimensional Data Model</h3>
                   <p className="proj-desc">
-                    End-to-end cloud pipeline generating monthly sales
-                    analytics with star-schema warehouse and KPI computation
-                    for revenue &amp; customer metrics.
+                    Dimensional data model with SCD Type-2 change tracking
+                    supporting 3+ years of full historical auditability for
+                    patient-level pharma data. Enabled downstream teams to
+                    retire ad-hoc reconciliation scripts entirely.
                   </p>
                   <div className="proj-metrics">
                     <div className="proj-metric">
-                      <span>E2E</span>
-                      <span>Pipeline</span>
+                      <span>3+ yr</span>
+                      <span>History</span>
                     </div>
                     <div className="proj-metric">
-                      <span>KPIs</span>
-                      <span>Revenue &amp; CX</span>
+                      <span>SCD-2</span>
+                      <span>Audit Trail</span>
                     </div>
                   </div>
                   <div className="tags">
-                    <span className="tag">AWS S3</span>
+                    <span className="tag">Data Modeling</span>
+                    <span className="tag">SQL</span>
+                    <span className="tag">Redshift</span>
+                    <span className="tag">Star Schema</span>
                     <span className="tag">PySpark</span>
-                    <span className="tag">Python</span>
                   </div>
                 </div>
               </div>
@@ -1584,13 +1777,13 @@ export default function Home() {
                         </a>
                       </div>
                       <div className="contact-row">
-                        <i className="fas fa-map-marker-alt"></i> Gurgaon,
-                        India
+                        <i className="fas fa-map-marker-alt"></i> Gurugram,
+                        Haryana, India
                       </div>
 
                       <div className="social-row">
                         <a
-                          href="https://linkedin.com/in/pronnoy-dutta"
+                          href="https://www.linkedin.com/in/pronnoy-dutta/"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="interactive"
