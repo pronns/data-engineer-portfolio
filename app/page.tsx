@@ -431,9 +431,10 @@ export default function Home() {
       /* ================================================================
          ENTER SYSTEM
          ================================================================ */
-      enterBtn.addEventListener("click", () => {
-        audio = new AudioEngine();
-        audio.boot();
+      let dismissed = false;
+      function dismissPreloader() {
+        if (dismissed) return;
+        dismissed = true;
         gsap.to("#preloader", {
           duration: 0.6,
           opacity: 0,
@@ -450,7 +451,17 @@ export default function Home() {
             animateCounters();
           },
         });
+      }
+
+      enterBtn.addEventListener("click", () => {
+        audio = new AudioEngine();
+        audio.boot();
+        dismissPreloader();
       });
+
+      // Auto-dismiss 1.5s after boot sequence finishes
+      const bootDuration = bootLines.length * 350 + 300;
+      setTimeout(dismissPreloader, bootDuration + 1500);
 
       /* ================================================================
          SCROLL ANIMATIONS
